@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* all the custom classes for styling part  */
+
+@layer components {
+  .caption {
+    @apply font-['kumbh_Sans'] font-[900] text-[1.25rem] leading-[1.6rem] dark:text-white ;
+  }
+  .inset {
+    @apply shadow-[inset_10px_10px_20px_0px_#D3E7F6,inset_-10px_-10px_20px_0px_#FFFFFF];
+  }
+  .ds {
+    @apply shadow-[10px_10px_20px_0px_#D3E7F6,-10px_-10px_20px_0px_#FFFFFF];
+  }
+
+  .app {
+    @apply p-[1.56rem] pt-0  flex flex-col gap-[2rem] bg-[#F2F7FB] dark:bg-[#222146] h-full w-full pb-[2.5rem] font-['Kumbh_Sans'];
+  }
+  .fixed_bottom {
+    @apply fixed bottom-0 left-0 right-0 flex  items-center justify-between bg-[rgba(66,61,128,0.5)] backdrop-blur-sm h-[5.938rem] px-6  z-50 w-screen;
+  }
+  .top_section {
+    @apply flex flex-col gap-[1.5rem] w-[100%];
+  }
+  .temperature_section {
+    @apply flex justify-between;
+  }
+  .doctor_section {
+    @apply flex flex-col gap-[1.5rem];
+  }
+  .problem_section {
+    @apply grid grid-cols-2 gap-6 w-[100%] dark:bg-[#282363];
+  }
+  .consultation_section {
+    @apply grid grid-cols-2 gap-[1.5rem];
+  }
+  .appointment_section {
+    @apply flex flex-col gap-5;
+  }
+  .clinic_map {
+    @apply flex flex-col gap-5 relative pb-[20rem];
+  }
+  .find_section {
+    @apply flex flex-col w-[100%] gap-[1.5rem];
+  }
+  .insurence_section {
+    @apply flex flex-col gap-[1.5rem] w-[100%];
+  }
+  .ngo_section {
+    @apply grid grid-cols-2 gap-[2rem]  w-[100%] dark:bg-[#282363];
+  }
+  .ratings_section {
+    @apply flex flex-col gap-8;
+  }
+}
+
+@layer base {
+  @screen mbvs {
+    html {
+      font-size: 62%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs1 {
+    html {
+      font-size: 65%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs2 {
+    html {
+      font-size: 67%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs3 {
+    html {
+      font-size: 70%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs4 {
+    html {
+      font-size: 72%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbvs5 {
+    html {
+      font-size: 74%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs {
+    html {
+      font-size: 75%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs1 {
+    html {
+      font-size: 78%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs2 {
+    html {
+      font-size: 80%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbs3 {
+    html {
+      font-size: 82%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm {
+    html {
+      font-size: 84%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm1 {
+    html {
+      font-size: 87%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm2 {
+    html {
+      font-size: 89%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm3 {
+    html {
+      font-size: 91%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm4 {
+    html {
+      font-size: 94%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbm5 {
+    html {
+      font-size: 97%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl {
+    html {
+      font-size: 100%; /* Makes 1rem = 16px */
+    }
+  }
+
+  @screen mbl1 {
+    html {
+      font-size: 104%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl2 {
+    html {
+      font-size: 108%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl3 {
+    html {
+      font-size: 112%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl4 {
+    html {
+      font-size: 116%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl5 {
+    html {
+      font-size: 122%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl6 {
+    html {
+      font-size: 126%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl7 {
+    html {
+      font-size: 133%; /* Makes 1rem =  */
+    }
+  }
+  @screen mbl8 {
+    html {
+      font-size: 137%; /* Makes 1rem = 16px */
+    }
+  }
+  @screen mbl9 {
+    html {
+      font-size: 141%; /* Makes 1rem = 16px */
+    }
+  }
+  @screen mbl10 {
+    html {
+      font-size: 147%; /* Makes 1rem = 16px */
+    }
+  }
+  @screen t {
+    html {
+      font-size: 150%; /* Makes 1rem =  */
+    }
+  }
+  @screen t1 {
+    html {
+      font-size: 154%; /* Makes 1rem =  */
+    }
+  }
+  @screen t2 {
+    html {
+      font-size: 158%; /* Makes 1rem =  */
+    }
+  }
+  @screen t3 {
+    html {
+      font-size: 162%; /* Makes 1rem = 16px */
+    }
+  }
+
+  @screen t4 {
+    html {
+      font-size: 167%; /* Makes 1rem =  */
+    }
+  }
+  @screen t5 {
+    html {
+      font-size: 171%; /* Makes 1rem = 16px */
+    }
+  }
+  @screen t6 {
+    html {
+      font-size: 176%; /* Makes 1rem = 16px */
+    }
+  }
+
+  @screen t7 {
+    html {
+      font-size: 180%; /* Makes 1rem =  */
+    }
+  }
+  @screen t8 {
+    html {
+      font-size: 184%; /* Makes 1rem = 16px */
+    }
+  }
+  @screen t9 {
+    html {
+      font-size: 188%; /* Makes 1rem =  */
+    }
+  }
+  @screen t10 {
+    html {
+      font-size: 193%; /* Makes 1rem = 16px */
+    }
+  }
+}
